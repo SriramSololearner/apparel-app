@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import img from "./image/beaty.png"
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <main class="main-block">
+        <section className="container1">
+          <span className="content">
+            <div id="round-circle"></div>
+            <div id="content" className="content">BASE <br /> APPAREL</div>
+          </span>
+
+          <div>
+            <h1 id="div-h1">WE'RE</h1>
+            <p id="div-p1">COMING</p>
+            <p id="div-p2">SOON</p>
+            <p id="div-p3"> <span>Lorem Ipsum is simply dummy text of the printing </span>  <span> and typesetting industry. Lorem psum has </span> <span> been the industry’s standard
+              dummy Lorem </span> <span> Ipsum is simply dummy text of the </span>  <span> printing and typesetting industry. </span> </p>
+            <form>
+              <input type="'text" pattern=".+@gmail\.com" placeholder="Email Address" id='input' required />
+              <button type="submit" id="btn"> &gt; </button>
+            </form>
+
+          </div>
+        </section>
+        <section>
+          <img src={img} alt='no-img' />
+        </section>
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
