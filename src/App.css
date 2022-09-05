@@ -139,7 +139,7 @@
     left:530px;
     height:52px;
     cursor: pointer;
-    background-color: #0fb3dc;
+    background-image:linear-gradient(to bottom right,blue,skyblue);
     color: #e6efef;
   }
 

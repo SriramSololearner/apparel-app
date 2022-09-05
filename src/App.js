@@ -3,6 +3,11 @@ import img from "./image/beaty.png"
 import "./App.css";
 
 const App = () => {
+
+  const submitHandler = e => {
+    e.preventDefault();
+    alert("Form Data Submitted");
+  }
   return (
     <div>
       <main class="main-block">
@@ -18,11 +23,11 @@ const App = () => {
             <p id="div-p2">SOON</p>
             <p id="div-p3"> <span>Lorem Ipsum is simply dummy text of the printing </span>  <span> and typesetting industry. Lorem psum has </span> <span> been the industry’s standard
               dummy Lorem </span> <span> Ipsum is simply dummy text of the </span>  <span> printing and typesetting industry. </span> </p>
-            <form>
-              <input type="'text" pattern=".+@gmail\.com" placeholder="Email Address" id='input' required />
+            <form onSubmit={submitHandler}>
+              <input type="email"  placeholder="Email Address" id='input' required />
               <button type="submit" id="btn"> &gt; </button>
             </form>
-
+            {/* pattern=".+@gmail\.com" */}
           </div>
         </section>
         <section>
